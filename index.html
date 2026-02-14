@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Viewer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Media Viewer</h1>
+        <input type="file" id="folderInput" webkitdirectory directory multiple>
+        
+        <div class="filter-buttons">
+            <button id="allBtn" class="active">All</button>
+            <button id="imagesBtn">Images</button>
+            <button id="videosBtn">Videos</button>
+            <button id="audioBtn">Audio</button>
+        </div>
+        
+        <div id="mediaContainer">
+            <img id="currentImage" src="" alt="No image selected">
+            <video id="currentVideo" controls></video>
+            <audio id="currentAudio" controls></audio>
+        </div>
+        
+        <div class="controls">
+            <button id="prevBtn">Previous</button>
+            <button id="nextBtn">Next</button>
+            <button id="autoScroll">Auto Next</button>
+        </div>
+        
+        <div id="mediaInfo"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
